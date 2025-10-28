@@ -1,0 +1,169 @@
+{
+  "app": {
+    "title": "Calendar App",
+    "loading": "Loading..."
+  },
+  "calendar": {
+    "views": {
+      "month": "Month",
+      "week": "Week"
+    },
+    "navigation": {
+      "previous": "Previous",
+      "next": "Next",
+      "today": "Today"
+    },
+    "days": {
+      "sun": "Sun",
+      "mon": "Mon", 
+      "tue": "Tue",
+      "wed": "Wed",
+      "thu": "Thu",
+      "fri": "Fri",
+      "sat": "Sat"
+    },
+    "months": {
+      "january": "January",
+      "february": "February",
+      "march": "March",
+      "april": "April",
+      "may": "May",
+      "june": "June",
+      "july": "July",
+      "august": "August",
+      "september": "September",
+      "october": "October",
+      "november": "November",
+      "december": "December"
+    }
+  },
+  "events": {
+    "add": "Add Event",
+    "edit": "Edit Event",
+    "delete": "Delete Event",
+    "deleteConfirm": "Are you sure you want to delete this event?",
+    "noEvents": "No events scheduled for this date.",
+    "clickToAdd": "Click on a day to add an event!",
+    "form": {
+      "title": "Title",
+      "titlePlaceholder": "Event title",
+      "description": "Description",
+      "descriptionPlaceholder": "Event description",
+      "date": "Date",
+      "time": "Time",
+      "location": "Location",
+      "locationPlaceholder": "Event location",
+      "category": "Category",
+      "color": "Color",
+      "timezone": "Timezone",
+      "recurring": "Recurring Event",
+      "recurrenceType": "Recurrence Type",
+      "recurrenceTypes": {
+        "weekly": "Weekly",
+        "monthly": "Monthly"
+      },
+      "endDate": "End Date",
+      "timezones": {
+        "local": "Local Time",
+        "jst": "Japan Standard Time (JST)"
+      }
+    },
+    "categories": {
+      "work": "Work",
+      "personal": "Personal",
+      "health": "Health",
+      "travel": "Travel",
+      "uncategorized": "Uncategorized"
+    },
+    "recurring": {
+      "weekly": "Weekly Recurring",
+      "monthly": "Monthly Recurring"
+    }
+  },
+  "categories": {
+    "title": "Manage Categories",
+    "addNew": "Add New Category",
+    "name": "Name",
+    "namePlaceholder": "Category name",
+    "icon": "Icon",
+    "existing": "Existing Categories",
+    "noCategories": "No categories yet",
+    "createFirst": "Create your first category above",
+    "deleteConfirm": "Are you sure you want to delete this category? Events will be moved to \"Uncategorized\"."
+  },
+  "export": {
+    "title": "Export",
+    "formats": {
+      "ics": "iCal (.ics)",
+      "json": "JSON",
+      "csv": "CSV"
+    },
+    "success": "Export completed successfully!",
+    "error": "Export failed"
+  },
+  "import": {
+    "title": "Import",
+    "success": "Successfully imported {{count}} events!",
+    "error": "Import failed: {{errors}}",
+    "unsupported": "Unsupported file format. Please use JSON or CSV."
+  },
+  "notifications": {
+    "test": "Test",
+    "permissionRequest": "Please allow notifications to receive event reminders",
+    "testTitle": "Calendar Reminder",
+    "testBody": "Test notification from Calendar App"
+  },
+  "theme": {
+    "light": "Light Mode",
+    "dark": "Dark Mode",
+    "toggle": "Toggle theme"
+  },
+  "language": {
+    "en": "English",
+    "jp": "日本語",
+    "toggle": "Toggle language"
+  },
+  "common": {
+    "cancel": "Cancel",
+    "save": "Save",
+    "update": "Update",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "confirm": "Confirm",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "weekView": {
+    "weekOf": "Week of {{date}}",
+    "timeSlots": {
+      "12am": "12am",
+      "1am": "1am",
+      "2am": "2am",
+      "3am": "3am",
+      "4am": "4am",
+      "5am": "5am",
+      "6am": "6am",
+      "7am": "7am",
+      "8am": "8am",
+      "9am": "9am",
+      "10am": "10am",
+      "11am": "11am",
+      "12pm": "12pm",
+      "1pm": "1pm",
+      "2pm": "2pm",
+      "3pm": "3pm",
+      "4pm": "4pm",
+      "5pm": "5pm",
+      "6pm": "6pm",
+      "7pm": "7pm",
+      "8pm": "8pm",
+      "9pm": "9pm",
+      "10pm": "10pm",
+      "11pm": "11pm"
+    }
+  }
+} 

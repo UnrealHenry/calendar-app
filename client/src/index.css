@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 1px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+:root {
+  --primary: #ffffff;
+  --background: #000000;
+  --foreground: #ffffff;
+  --muted: #666666;
+  --border: #333333;
+  --accent: #808080;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.gradient-text-elder {
+  background: linear-gradient(135deg, #ffffff 0%, #808080 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.mix-blend-difference {
+  mix-blend-mode: difference;
+}
+
+.mix-blend-screen {
+  mix-blend-mode: screen;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes float-subtle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.fade-in-up {
+  opacity: 0;
+  transform: translate3d(0, 30px, 0);
+  transition: opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.fade-in-up.animate-in {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+.animate-spin-reverse {
+  animation: spin-reverse 15s linear infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 4s ease-in-out infinite;
+}
+
+.animate-float-subtle {
+  animation: float-subtle 6s ease-in-out infinite;
+}
+
+.animation-delay-100 { animation-delay: 100ms; }
+.animation-delay-200 { animation-delay: 200ms; }
+.animation-delay-300 { animation-delay: 300ms; }
+.animation-delay-400 { animation-delay: 400ms; }
+.animation-delay-500 { animation-delay: 500ms; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.font-mono {
+  font-family: 'Space Mono', 'Menlo', 'Monaco', 'Cascadia Code', monospace;
+}
+
+.text-massive {
+  font-size: clamp(3rem, 8vw, 8rem);
+  line-height: 0.9;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.text-huge {
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.hover-lift-subtle {
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.hover-lift-subtle:hover {
+  transform: translateY(-2px);
+}
+
+.grid-pattern {
+  background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.02) 1px, transparent 0);
+  background-size: 40px 40px;
+}
+
+.border-elegant {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-minimal {
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Update glassmorphism styles for Jack Elder aesthetic */
+.glass-light {
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glass-dark {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@layer components {
+  /* Button styles with Jack Elder aesthetic */
+  .btn-primary {
+    @apply bg-white text-black px-8 py-4 rounded-full font-medium transition-all duration-300 hover:bg-gray-100 hover:scale-[1.02] active:scale-95 focus:outline-none;
+    font-size: clamp(0.875rem, 2vw, 1rem);
+  }
+
+  .btn-secondary {
+    @apply bg-transparent text-white px-8 py-4 border border-white/20 rounded-full font-medium transition-all duration-300 hover:bg-white/5 hover:border-white/40 active:scale-95 focus:outline-none;
+    font-size: clamp(0.875rem, 2vw, 1rem);
+  }
+
+  .btn-danger {
+    @apply bg-red-600 text-white px-8 py-4 rounded-full font-medium transition-all duration-300 hover:bg-red-700 hover:scale-[1.02] active:scale-95 focus:outline-none;
+    font-size: clamp(0.875rem, 2vw, 1rem);
+  }
+
+  /* Input styles */
+  .input-field {
+    @apply w-full px-6 py-4 bg-transparent border border-white/20 rounded-2xl text-white placeholder-gray-400 focus:outline-none focus:border-white/40 transition-all duration-300 glass-minimal;
+    font-size: clamp(0.875rem, 2vw, 1rem);
+  }
+
+  /* Card styles */
+  .card {
+    @apply glass-minimal rounded-2xl border-elegant transition-all duration-300 hover-lift-subtle;
+  }
+
+  .card-hover {
+    @apply hover:bg-white/5 hover:border-white/15;
+  }
+
+  /* Calendar-specific styles */
+  .calendar-day {
+    @apply w-10 h-10 flex items-center justify-center rounded-xl text-sm font-medium transition-all duration-300 cursor-pointer hover-lift-subtle;
+  }
+
+  .calendar-day-today {
+    @apply bg-white text-black;
+  }
+
+  .calendar-day-selected {
+    @apply bg-white/20 text-white border-elegant;
+  }
+
+  .calendar-day-other-month {
+    @apply text-gray-500 hover:text-gray-400;
+  }
+
+  /* Text styles */
+  .text-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  .text-body {
+    font-size: clamp(0.875rem, 2vw, 1rem);
+    line-height: 1.6;
+  }
+
+  .text-small {
+    font-size: clamp(0.75rem, 1.5vw, 0.875rem);
+    line-height: 1.5;
+    color: var(--muted);
+  }
+}
+
+button, a, [role="button"] {
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.5);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: rgba(255, 255, 255, 0.2);
+  color: inherit;
+}
+
+@layer utilities {
+  /* Text gradients */
+  .text-gradient {
+    @apply gradient-text-elder;
+  }
+
+  /* Custom shadows */
+  .shadow-soft {
+    box-shadow: 0 2px 15px -3px rgba(255, 255, 255, 0.07), 0 10px 20px -2px rgba(255, 255, 255, 0.04);
+  }
+
+  .shadow-glow {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+  }
+}
+
+@media (max-width: 768px) {
+  .glass-minimal {
+    backdrop-filter: blur(10px);
+  }
+  
+  .text-massive {
+    font-size: clamp(2.5rem, 12vw, 4rem);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (prefers-contrast: high) {
+  :root {
+    --border: #ffffff;
+    --muted: #cccccc;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+  }
+}

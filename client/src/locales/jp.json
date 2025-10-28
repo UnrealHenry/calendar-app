@@ -1,0 +1,169 @@
+{
+  "app": {
+    "title": "カレンダーアプリ",
+    "loading": "読み込み中..."
+  },
+  "calendar": {
+    "views": {
+      "month": "月",
+      "week": "週"
+    },
+    "navigation": {
+      "previous": "前",
+      "next": "次",
+      "today": "今日"
+    },
+    "days": {
+      "sun": "日",
+      "mon": "月", 
+      "tue": "火",
+      "wed": "水",
+      "thu": "木",
+      "fri": "金",
+      "sat": "土"
+    },
+    "months": {
+      "january": "1月",
+      "february": "2月",
+      "march": "3月",
+      "april": "4月",
+      "may": "5月",
+      "june": "6月",
+      "july": "7月",
+      "august": "8月",
+      "september": "9月",
+      "october": "10月",
+      "november": "11月",
+      "december": "12月"
+    }
+  },
+  "events": {
+    "add": "イベント追加",
+    "edit": "イベント編集",
+    "delete": "イベント削除",
+    "deleteConfirm": "このイベントを削除してもよろしいですか？",
+    "noEvents": "この日には予定がありません。",
+    "clickToAdd": "日をクリックしてイベントを追加してください！",
+    "form": {
+      "title": "タイトル",
+      "titlePlaceholder": "イベントタイトル",
+      "description": "説明",
+      "descriptionPlaceholder": "イベントの説明",
+      "date": "日付",
+      "time": "時間",
+      "location": "場所",
+      "locationPlaceholder": "イベントの場所",
+      "category": "カテゴリ",
+      "color": "色",
+      "timezone": "タイムゾーン",
+      "recurring": "繰り返しイベント",
+      "recurrenceType": "繰り返しタイプ",
+      "recurrenceTypes": {
+        "weekly": "週次",
+        "monthly": "月次"
+      },
+      "endDate": "終了日",
+      "timezones": {
+        "local": "ローカル時間",
+        "jst": "日本標準時 (JST)"
+      }
+    },
+    "categories": {
+      "work": "仕事",
+      "personal": "個人",
+      "health": "健康",
+      "travel": "旅行",
+      "uncategorized": "未分類"
+    },
+    "recurring": {
+      "weekly": "週次繰り返し",
+      "monthly": "月次繰り返し"
+    }
+  },
+  "categories": {
+    "title": "カテゴリ管理",
+    "addNew": "新しいカテゴリを追加",
+    "name": "名前",
+    "namePlaceholder": "カテゴリ名",
+    "icon": "アイコン",
+    "existing": "既存のカテゴリ",
+    "noCategories": "カテゴリがまだありません",
+    "createFirst": "上記で最初のカテゴリを作成してください",
+    "deleteConfirm": "このカテゴリを削除してもよろしいですか？イベントは「未分類」に移動されます。"
+  },
+  "export": {
+    "title": "エクスポート",
+    "formats": {
+      "ics": "iCal (.ics)",
+      "json": "JSON",
+      "csv": "CSV"
+    },
+    "success": "エクスポートが正常に完了しました！",
+    "error": "エクスポートに失敗しました"
+  },
+  "import": {
+    "title": "インポート",
+    "success": "{{count}}件のイベントを正常にインポートしました！",
+    "error": "インポートに失敗しました: {{errors}}",
+    "unsupported": "サポートされていないファイル形式です。JSONまたはCSVを使用してください。"
+  },
+  "notifications": {
+    "test": "テスト",
+    "permissionRequest": "イベントリマインダーを受け取るには通知を許可してください",
+    "testTitle": "カレンダーリマインダー",
+    "testBody": "カレンダーアプリからのテスト通知"
+  },
+  "theme": {
+    "light": "ライトモード",
+    "dark": "ダークモード",
+    "toggle": "テーマ切り替え"
+  },
+  "language": {
+    "en": "English",
+    "jp": "日本語",
+    "toggle": "言語切り替え"
+  },
+  "common": {
+    "cancel": "キャンセル",
+    "save": "保存",
+    "update": "更新",
+    "delete": "削除",
+    "edit": "編集",
+    "close": "閉じる",
+    "loading": "読み込み中...",
+    "error": "エラー",
+    "success": "成功",
+    "confirm": "確認",
+    "yes": "はい",
+    "no": "いいえ"
+  },
+  "weekView": {
+    "weekOf": "{{date}}の週",
+    "timeSlots": {
+      "12am": "0時",
+      "1am": "1時",
+      "2am": "2時",
+      "3am": "3時",
+      "4am": "4時",
+      "5am": "5時",
+      "6am": "6時",
+      "7am": "7時",
+      "8am": "8時",
+      "9am": "9時",
+      "10am": "10時",
+      "11am": "11時",
+      "12pm": "12時",
+      "1pm": "13時",
+      "2pm": "14時",
+      "3pm": "15時",
+      "4pm": "16時",
+      "5pm": "17時",
+      "6pm": "18時",
+      "7pm": "19時",
+      "8pm": "20時",
+      "9pm": "21時",
+      "10pm": "22時",
+      "11pm": "23時"
+    }
+  }
+} 
